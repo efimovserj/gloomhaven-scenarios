@@ -361,210 +361,300 @@ export const worldMap = [
   },
   {
     id: 21,
-    code: "aaa-1",
-    title: "infernal throne",
-    requirements: null,
-    requirementsText: "None",
+    code: "C-7",
+    title: "Infernal Throne",
+    requirements: [
+      {
+        ids: [21, 27, 36],
+        complete: false
+      }
+    ],
+    requirementsText: "The Rift Neutralized (Global) INCOMPLETE",
     dependedBy: [10],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: [10],
+    produce: null,
+    partyAchievement: [
+      "The Rift Neutralized",
+      {
+        condition: {
+          ids: 35,
+          complete: true
+        },
+        achievement: "Artifact: Recovered"
+      }
+    ],
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/21.png"
   },
   {
     id: 22,
-    code: "aaa-1",
-    title: "temple of the elements",
-    requirements: null,
-    requirementsText: "None",
-    dependedBy: [10],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    code: "K-8",
+    title: "Temple of the Elements",
+    requirements: [
+      {
+        ids: 10,
+        complete: true
+      },
+      {
+        ids: 26,
+        complete: true
+      }
+    ],
+    requirementsText:
+      "A Demon’s Errand (Party) or Following Clues (Party) COMPLETE",
+    dependedBy: [10, 26],
+    links: null,
+    produce: [31, 35, 36],
+    partyAchievement: "Artifact: Recovered",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/22.png"
   },
   {
     id: 23,
-    code: "aaa-1",
-    title: "deep ruins",
+    code: "C-15",
+    title: "Deep Ruins",
     requirements: null,
     requirementsText: "None",
     dependedBy: [18],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: ["Gloomhaven"],
+    produce: null,
+    partyAchievement: ["Ancient Technology", "Through the Ruins"],
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/23.png"
   },
   {
     id: 24,
-    code: "aaa-1",
-    title: "echo chamber",
+    code: "C-6",
+    title: "Echo Chamber",
     requirements: null,
     requirementsText: "None",
     dependedBy: [16],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: [16],
+    produce: [30, 32],
+    partyAchievement: "The Voice’s Command",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/24.png"
   },
   {
     id: 25,
-    code: "aaa-1",
-    title: "icecrag ascent",
+    code: "A-5",
+    title: "Icecrag Ascent",
     requirements: null,
     requirementsText: "None",
     dependedBy: [16],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: [34],
+    produce: [33, 34],
+    partyAchievement: "The Drake’s Command",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/25.png"
   },
   {
     id: 26,
-    code: "aaa-1",
-    title: "ancient cistern",
-    requirements: null,
-    requirementsText: "None",
+    code: "D-15",
+    title: "Ancient Cistern",
+    requirements: [
+      {
+        ids: 43,
+        complete: true
+      },
+      {
+        ids: 23,
+        complete: true
+      }
+    ],
+    requirementsText:
+      "Water-Breathing (Global) or Through the Ruins (Party) COMPLETE",
     dependedBy: [18],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: ["Gloomhaven"],
+    produce: [22],
+    partyAchievement: "Following Clues",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/26.png"
   },
   {
     id: 27,
-    code: "aaa-1",
-    title: "ruinous rift",
-    requirements: null,
-    requirementsText: "None",
+    code: "E-6",
+    title: "Ruinous Rift",
+    requirements: [
+      {
+        ids: 35,
+        complete: false
+      },
+      {
+        ids: 19,
+        complete: true
+      }
+    ],
+    requirementsText:
+      "Artifact: Lost INCOMPLETE (Global) and Stonebreaker’s Censer (Party) COMPLETE",
     dependedBy: [19],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: null,
+    produce: null,
+    partyAchievement: "The Rift Neutralized",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/27.png"
   },
   {
     id: 28,
-    code: "aaa-1",
-    title: "outer ritual chamber",
-    requirements: null,
-    requirementsText: "None",
+    code: "E-4",
+    title: "Outer Ritual Chamber",
+    requirements: [
+      {
+        ids: 6,
+        complete: true
+      }
+    ],
+    requirementsText: "Dark Bounty (Party) COMPLETE",
     dependedBy: [12, 20],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: [29],
+    produce: [29],
+    partyAchievement: "An Invitation",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/28.png"
   },
   {
     id: 29,
-    code: "aaa-1",
-    title: "sanctuary of gloom",
-    requirements: null,
-    requirementsText: "None",
-    dependedBy: [200],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    code: "E-3",
+    title: "Sanctuary of Gloom",
+    requirements: [
+      {
+        ids: 28,
+        complete: true
+      }
+    ],
+    requirementsText: "An Invitation (Party) COMPLETE",
+    dependedBy: [28],
+    links: [28],
+    produce: null,
+    partyAchievement: "The Edge of Darkness",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/29.png"
   },
   {
     id: 30,
-    code: "aaa-1",
-    title: "shrine of the depths",
-    requirements: null,
-    requirementsText: "None",
-    dependedBy: [200],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    code: "N-15",
+    title: "Shrine of the Depths",
+    requirements: [
+      {
+        ids: [24, 42],
+        complete: true
+      }
+    ],
+    requirementsText: "The Voice’s Command (Party)",
+    dependedBy: [24],
+    links: null,
+    produce: [42],
+    partyAchievement: "The Scepter and the Voice",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/30.png"
   },
   {
     id: 31,
-    code: "aaa-1",
-    title: "plane of night",
-    requirements: null,
-    requirementsText: "None",
-    dependedBy: [14],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    code: "A-16",
+    title: "Plane of Night",
+    requirements: [
+      {
+        ids: 14,
+        complete: true
+      },
+      {
+        ids: [21, 22],
+        complete: true
+      }
+    ],
+    requirementsText:
+      "The Power of Enhancement (Global) and Artifact: Recovered (Global) COMPLETE",
+    dependedBy: [14, 22],
+    links: ["Gloomhaven"],
+    produce: [37, 38, 39, 43],
+    partyAchievement: "Artifact: Cleansed",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/31.png"
   },
   {
     id: 32,
-    code: "aaa-1",
-    title: "decrepit wood",
-    requirements: null,
-    requirementsText: "None",
-    dependedBy: [200],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    code: "L-11",
+    title: "Decrepit Wood",
+    requirements: [
+      {
+        ids: 24,
+        complete: true
+      }
+    ],
+    requirementsText: "The Voice’s Command (Party) COMPLETE",
+    dependedBy: [24],
+    links: null,
+    produce: [33, 40],
+    partyAchievement: null,
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/32.png"
   },
   {
     id: 33,
-    code: "aaa-1",
-    title: "savvas armory",
-    requirements: null,
-    requirementsText: "None",
-    dependedBy: [200],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    code: "A-7",
+    title: "Savvas Armory",
+    requirements: [
+      {
+        ids: 24,
+        complete: true
+      },
+      {
+        ids: 25,
+        complete: true
+      }
+    ],
+    requirementsText:
+      "The Voice’s Command (Party) or The Drake’s Command (Party) COMPLETE",
+    dependedBy: [25, 32],
+    links: null,
+    produce: null,
+    partyAchievement: ["The Voice’s Treasure", "The Drake’s Treasure"],
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/33.png"
   },
   {
     id: 34,
-    code: "aaa-1",
-    title: "scorched summit",
-    requirements: null,
-    requirementsText: "None",
-    dependedBy: [200],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    code: "A-4",
+    title: "Scorched Summit",
+    requirements: [
+      {
+        ids: 25,
+        complete: true
+      }
+    ],
+    requirementsText:
+      "The Drake’s Command (Party) COMPLETE and The Drake Aided (Global) INCOMPLETE",
+    dependedBy: [25],
+    links: [25],
+    produce: null,
+    partyAchievement: "The Drake Slain",
+    excludeAchievement: "The Drake’s Command",
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/34.png"
@@ -575,7 +665,7 @@ export const worldMap = [
     title: "gloomhaven battlements a",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [22],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -590,7 +680,7 @@ export const worldMap = [
     title: "gloomhaven battlements b",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [22],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -605,7 +695,7 @@ export const worldMap = [
     title: "doom trench",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [31],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -620,7 +710,7 @@ export const worldMap = [
     title: "slave pens",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [31],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -635,7 +725,7 @@ export const worldMap = [
     title: "treacherous divide",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [31],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -650,7 +740,7 @@ export const worldMap = [
     title: "ancient defense network",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [32],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -680,7 +770,7 @@ export const worldMap = [
     title: "realm of the voice",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [30],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -695,7 +785,7 @@ export const worldMap = [
     title: "drake nest",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [14, 18],
+    dependedBy: [14, 18, 31],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
