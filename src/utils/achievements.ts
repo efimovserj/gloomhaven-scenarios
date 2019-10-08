@@ -193,7 +193,7 @@ export const achievements = [
   },
   {
     id: 32,
-    text: "End of Corruption",
+    text: "End of Corruption1",
     type: "global",
     complete: false
   },
@@ -230,6 +230,18 @@ export const achievements = [
   {
     id: 37,
     text: "The Drake Aided",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 38,
+    text: "End of Corruption2",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 39,
+    text: "End of Corruption3",
     type: "global",
     complete: false
   }
