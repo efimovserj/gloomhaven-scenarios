@@ -1,122 +1,236 @@
-export const achievements = {
-  "ach-1": {
-    title: "First Steps",
+export const achievements = [
+  {
+    id: 0,
+    text: "First Steps",
     type: "party",
     complete: false
   },
-  "ach-2": {
-    title: "Jekserah’s Plans",
+  {
+    id: 1,
+    text: "Jekserah’s Plans",
     type: "party",
     complete: false
   },
-  "ach-3": {
-    title: "Dark Bounty",
+  {
+    id: 2,
+    text: "Dark Bounty",
     type: "party",
     complete: false
   },
-  "ach-4": {
-    title: "The Merchant Flees",
+  {
+    id: 3,
+    text: "The Merchant Flees",
     type: "global",
     complete: false
   },
-  "ach-5": {
-    title: "The Dead Invade",
+  {
+    id: 4,
+    text: "The Dead Invade",
     type: "global",
     complete: false
   },
-  "ach-6": {
-    title: "A Demon’s Errand",
+  {
+    id: 5,
+    text: "A Demon’s Errand",
     type: "party",
     complete: false
   },
-  "ach-7": {
-    title: "City Rule: Economic",
+  {
+    id: 6,
+    text: "City Rule: Economic",
     type: "global",
     complete: false
   },
-  "ach-8": {
-    title: "End of the Invasion",
+  {
+    id: 7,
+    text: "End of the Invasion",
     type: "global",
     complete: false
   },
-  "ach-9": {
-    title: "The Power of Enhancement",
+  {
+    id: 8,
+    text: "The Power of Enhancement",
     type: "global",
     complete: false
   },
-  "ach-10": {
-    title: "Stonebreaker’s Censer",
+  {
+    id: 9,
+    text: "Stonebreaker’s Censer",
     type: "party",
     complete: false
   },
-  "ach-11": {
-    title: "The Rift Neutralized",
+  {
+    id: 10,
+    text: "The Rift Neutralized",
     type: "global",
     complete: false
   },
-  "ach-12": {
-    title: "Artifact: Recovered",
+  {
+    id: 11,
+    text: "Artifact: Recovered",
     type: "global",
     complete: false
   },
-  "ach-13": {
-    title: "Ancient Technology",
+  {
+    id: 12,
+    text: "Ancient Technology",
     type: "global",
     complete: false
   },
-  "ach-14": {
-    title: "Through the Ruins",
+  {
+    id: 13,
+    text: "Through the Ruins",
     type: "party",
     complete: false
   },
-  "ach-15": {
-    title: "The Voice’s Command",
+  {
+    id: 14,
+    text: "The Voice’s Command",
     type: "party",
     complete: false
   },
-  "ach-16": {
-    title: "The Drake’s Command",
+  {
+    id: 15,
+    text: "The Drake’s Command",
     type: "party",
     complete: false
   },
-  "ach-17": {
-    title: "Following Clues",
+  {
+    id: 16,
+    text: "Following Clues",
     type: "party",
     complete: false
   },
-  "ach-18": {
-    title: "An Invitation",
+  {
+    id: 17,
+    text: "An Invitation",
     type: "party",
     complete: false
   },
-  "ach-19": {
-    title: "The Edge of Darkness",
+  {
+    id: 18,
+    text: "The Edge of Darkness",
     type: "global",
     complete: false
   },
-  "ach-20": {
-    title: "The Scepter and the Voice",
+  {
+    id: 19,
+    text: "The Scepter and the Voice",
     type: "party",
     complete: false
   },
-  "ach-21": {
-    title: "Artifact: Cleansed",
+  {
+    id: 20,
+    text: "Artifact: Cleansed",
     type: "global",
     complete: false
   },
-  "ach-22": {
-    title: "The Voice’s Treasure",
+  {
+    id: 21,
+    text: "The Voice’s Treasure",
     type: "party",
     complete: false
   },
-  "ach-23": {
-    title: "The Drake’s Treasure",
+  {
+    id: 22,
+    text: "The Drake’s Treasure",
     type: "party",
     complete: false
   },
-  "ach-24": {
-    title: "The Drake Slain",
+  {
+    id: 23,
+    text: "The Drake Slain",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 24,
+    text: "Artifact: Lost",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 25,
+    text: "City Rule: Demonic",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 26,
+    text: "Through the Trench",
+    type: "party",
+    complete: false
+  },
+  {
+    id: 27,
+    text: "Redthorn’s Aid",
+    type: "party",
+    complete: false
+  },
+  {
+    id: 28,
+    text: "Across the Divide",
+    type: "party",
+    complete: false
+  },
+  {
+    id: 29,
+    text: "The Voice Freed",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 30,
+    text: "The Voice Silenced",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 31,
+    text: "Water-Breathing",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 32,
+    text: "End of Corruption",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 33,
+    text: "Annihilation of Order",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 34,
+    text: "City Rule: Militaristic",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 35,
+    text: "End of Gloom",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 36,
+    text: "The Poison’s Source",
+    type: "party",
+    complete: false
+  },
+  {
+    id: 37,
+    text: "Through the Nest",
+    type: "global",
+    complete: false
+  },
+  {
+    id: 37,
+    text: "The Drake Aided",
     type: "global",
     complete: false
   }
-};
+];

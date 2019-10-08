@@ -20,7 +20,7 @@ export const worldMap = [
     title: "Barrow Lair",
     requirements: [
       {
-        ids: 1,
+        achievement: "First Steps",
         complete: true
       }
     ],
@@ -40,7 +40,7 @@ export const worldMap = [
     title: "Inox Encampment",
     requirements: [
       {
-        ids: 8,
+        achievement: "The Merchant Flees",
         complete: false
       }
     ],
@@ -105,11 +105,11 @@ export const worldMap = [
     title: "Vibrant Grotto",
     requirements: [
       {
-        ids: 8,
+        achievement: "The Power of Enhancement",
         complete: true
       },
       {
-        ids: 14,
+        achievement: "The Merchant Flees",
         complete: true
       }
     ],
@@ -130,11 +130,11 @@ export const worldMap = [
     title: "Gloomhaven Warehouse",
     requirements: [
       {
-        ids: [3, 6],
+        achievement: "Jekserah’s Plans",
         complete: true
       },
       {
-        ids: 9,
+        achievement: "The Dead Invade",
         complete: false
       }
     ],
@@ -155,7 +155,7 @@ export const worldMap = [
     title: "Diamond Mine",
     requirements: [
       {
-        ids: 8,
+        achievement: "The Merchant Flees",
         complete: false
       }
     ],
@@ -175,7 +175,7 @@ export const worldMap = [
     title: "plane of elemental power",
     requirements: [
       {
-        ids: [21, 27, 36],
+        achievement: "The Rift Neutralized",
         complete: false
       }
     ],
@@ -195,7 +195,7 @@ export const worldMap = [
     title: "Gloomhaven Square A",
     requirements: [
       {
-        ids: 12,
+        achievement: "End of the Invasion",
         complete: false
       }
     ],
@@ -215,7 +215,7 @@ export const worldMap = [
     title: "Gloomhaven Square B",
     requirements: [
       {
-        ids: 11,
+        achievement: "End of the Invasion",
         complete: false
       }
     ],
@@ -265,7 +265,7 @@ export const worldMap = [
     title: "Shrine of Strength",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [13],
+    dependedBy: [13, 39],
     links: null,
     produce: null,
     partyAchievement: null,
@@ -325,7 +325,7 @@ export const worldMap = [
     title: "Forgotten Crypt",
     requirements: [
       {
-        ids: 14,
+        achievement: "The Power of Enhancement",
         complete: true
       }
     ],
@@ -345,7 +345,7 @@ export const worldMap = [
     title: "Necromancer's Sanctum",
     requirements: [
       {
-        ids: 8,
+        achievement: "The Merchant Flees",
         complete: true
       }
     ],
@@ -365,7 +365,7 @@ export const worldMap = [
     title: "Infernal Throne",
     requirements: [
       {
-        ids: [21, 27, 36],
+        achievement: "The Rift Neutralized",
         complete: false
       }
     ],
@@ -377,7 +377,7 @@ export const worldMap = [
       "The Rift Neutralized",
       {
         condition: {
-          ids: 35,
+          achievement: "Artifact: Lost",
           complete: true
         },
         achievement: "Artifact: Recovered"
@@ -394,11 +394,7 @@ export const worldMap = [
     title: "Temple of the Elements",
     requirements: [
       {
-        ids: 10,
-        complete: true
-      },
-      {
-        ids: 26,
+        achievement: ["A Demon’s Errand", "Following Clues"],
         complete: true
       }
     ],
@@ -464,11 +460,7 @@ export const worldMap = [
     title: "Ancient Cistern",
     requirements: [
       {
-        ids: 43,
-        complete: true
-      },
-      {
-        ids: 23,
+        achievement: ["Water-Breathing (Global)", "Through the Ruins"],
         complete: true
       }
     ],
@@ -489,11 +481,11 @@ export const worldMap = [
     title: "Ruinous Rift",
     requirements: [
       {
-        ids: 35,
+        achievement: "Artifact: Lost",
         complete: false
       },
       {
-        ids: 19,
+        achievement: "Stonebreaker’s Censer",
         complete: true
       }
     ],
@@ -514,7 +506,7 @@ export const worldMap = [
     title: "Outer Ritual Chamber",
     requirements: [
       {
-        ids: 6,
+        achievement: "Dark Bounty",
         complete: true
       }
     ],
@@ -534,7 +526,7 @@ export const worldMap = [
     title: "Sanctuary of Gloom",
     requirements: [
       {
-        ids: 28,
+        achievement: "An Invitation",
         complete: true
       }
     ],
@@ -554,7 +546,7 @@ export const worldMap = [
     title: "Shrine of the Depths",
     requirements: [
       {
-        ids: [24, 42],
+        achievement: "The Voice’s Command",
         complete: true
       }
     ],
@@ -574,11 +566,11 @@ export const worldMap = [
     title: "Plane of Night",
     requirements: [
       {
-        ids: 14,
+        achievement: "The Power of Enhancement",
         complete: true
       },
       {
-        ids: [21, 22],
+        achievement: "Artifact: Recovered",
         complete: true
       }
     ],
@@ -599,7 +591,7 @@ export const worldMap = [
     title: "Decrepit Wood",
     requirements: [
       {
-        ids: 24,
+        achievement: "The Voice’s Command",
         complete: true
       }
     ],
@@ -619,11 +611,7 @@ export const worldMap = [
     title: "Savvas Armory",
     requirements: [
       {
-        ids: 24,
-        complete: true
-      },
-      {
-        ids: 25,
+        achievement: ["The Voice’s Command", "The Drake’s Command"],
         complete: true
       }
     ],
@@ -644,7 +632,11 @@ export const worldMap = [
     title: "Scorched Summit",
     requirements: [
       {
-        ids: 25,
+        achievement: "The Drake’s Command",
+        complete: true
+      },
+      {
+        achievement: "The Drake Aided",
         complete: true
       }
     ],
@@ -661,90 +653,125 @@ export const worldMap = [
   },
   {
     id: 35,
-    code: "aaa-1",
-    title: "gloomhaven battlements a",
-    requirements: null,
-    requirementsText: "None",
+    code: "A-14",
+    title: "Gloomhaven Battlements A",
+    requirements: [
+      {
+        achievement: "A Demon’s Errand",
+        complete: true
+      },
+      {
+        achievement: "The Rift Neutralized",
+        complete: false
+      }
+    ],
+    requirementsText:
+      "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
     dependedBy: [22],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: ["Gloomhaven"],
+    produce: [45],
+    partyAchievement: ["City Rule: Demonic", "Artifact: Lost"],
+    excludeAchievement: "A Demon’s Errand",
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/35-36.png"
   },
   {
     id: 36,
-    code: "aaa-1",
-    title: "gloomhaven battlements b",
-    requirements: null,
-    requirementsText: "None",
+    code: "B-14",
+    title: "Gloomhaven Battlements B",
+    requirements: [
+      {
+        achievement: "A Demon’s Errand",
+        complete: true
+      },
+      {
+        achievement: "The Rift Neutralized",
+        complete: false
+      }
+    ],
+    requirementsText:
+      "A Demon’s Errand (Party) COMPLETE and The Rift Neutralized (Global) INCOMPLETE",
     dependedBy: [22],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: ["Gloomhaven"],
+    produce: null,
+    partyAchievement: "The Rift Neutralized",
+    excludeAchievement: "The Demon’s Errand",
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/35-36.png"
   },
   {
     id: 37,
-    code: "aaa-1",
-    title: "doom trench",
-    requirements: null,
-    requirementsText: "None",
+    code: "G-18",
+    title: "Doom Trench",
+    requirements: [
+      {
+        achievement: "Water-Breathing",
+        complete: true
+      }
+    ],
+    requirementsText: "Water-Breathing (Global) COMPLETE",
     dependedBy: [31],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: ["Gloomhaven"],
+    produce: [47],
+    partyAchievement: "Through the Trench",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/37.png"
   },
   {
     id: 38,
-    code: "aaa-1",
-    title: "slave pens",
+    code: "G-2",
+    title: "Slave Pens",
     requirements: null,
     requirementsText: "None",
     dependedBy: [31],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: [44],
+    produce: [44, 48],
+    partyAchievement: "Redthorn’s Aid",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/38.png"
   },
   {
     id: 39,
-    code: "aaa-1",
-    title: "treacherous divide",
+    code: "B-11",
+    title: "Treacherous Divide",
     requirements: null,
     requirementsText: "None",
     dependedBy: [31],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: [46],
+    produce: [15, 46],
+    partyAchievement: "Across the Divide",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/39.png"
   },
   {
     id: 40,
-    code: "aaa-1",
-    title: "ancient defense network",
-    requirements: null,
-    requirementsText: "None",
+    code: "F-12",
+    title: "Ancient Defense Network",
+    requirements: [
+      {
+        achievement: "The Voice’s Command",
+        complete: true
+      },
+      {
+        achievement: "The Voice’s Treasure",
+        complete: true
+      }
+    ],
+    requirementsText:
+      "The Voice’s Command (Party) and The Voice’s Treasure (Party) COMPLETE",
     dependedBy: [32],
-    links: [600],
-    produce: [100],
-    partyAchievement: "AZAZAZAZAZAZA",
-    excludeAchievement: "WEWEWEWEWEWE",
+    links: [41],
+    produce: [41],
+    partyAchievement: "Ancient Technology",
+    excludeAchievement: null,
     type: "main",
     mapPosition: ["300%", "400%"],
     image: "world-map/40.png"
@@ -755,7 +782,7 @@ export const worldMap = [
     title: "timeworn tomb",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [40],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -800,7 +827,7 @@ export const worldMap = [
     title: "tribal assault",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [38],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -815,7 +842,7 @@ export const worldMap = [
     title: "rebel swamp",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [35],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -830,7 +857,7 @@ export const worldMap = [
     title: "nightmare peak",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [39],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -845,7 +872,7 @@ export const worldMap = [
     title: "lair of the unseeing eye",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [37],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
@@ -860,7 +887,7 @@ export const worldMap = [
     title: "shadow weald",
     requirements: null,
     requirementsText: "None",
-    dependedBy: [200],
+    dependedBy: [38],
     links: [600],
     produce: [100],
     partyAchievement: "AZAZAZAZAZAZA",
