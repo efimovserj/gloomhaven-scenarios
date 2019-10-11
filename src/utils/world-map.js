@@ -2,7 +2,7 @@ export const worldMap = [
   {
     id: 0,
     code: null,
-    title: "Gloomhaven",
+    name: "Gloomhaven",
     requirements: null,
     requirementsText: "None",
     dependedBy: null,
@@ -17,7 +17,7 @@ export const worldMap = [
   {
     id: 1,
     code: "G-10",
-    title: "Black Barrow",
+    name: "Black Barrow",
     requirements: null,
     requirementsText: "None",
     dependedBy: null,
@@ -32,10 +32,11 @@ export const worldMap = [
   {
     id: 2,
     code: "G-11",
-    title: "Barrow Lair",
+    name: "Barrow Lair",
     requirements: [
       {
-        achievement: "First Steps",
+        name: "First Steps",
+        type: "achievement",
         complete: true
       }
     ],
@@ -52,10 +53,11 @@ export const worldMap = [
   {
     id: 3,
     code: "G-3",
-    title: "Inox Encampment",
+    name: "Inox Encampment",
     requirements: [
       {
-        achievement: "The Merchant Flees",
+        name: "The Merchant Flees",
+        type: "achievement",
         complete: false
       }
     ],
@@ -72,7 +74,7 @@ export const worldMap = [
   {
     id: 4,
     code: "E-11",
-    title: "Crypt of the Damned",
+    name: "Crypt of the Damned",
     requirements: null,
     requirementsText: "None",
     dependedBy: [2],
@@ -87,7 +89,7 @@ export const worldMap = [
   {
     id: 5,
     code: "D-6",
-    title: "Ruinous Crypt",
+    name: "Ruinous Crypt",
     requirements: null,
     requirementsText: "None",
     dependedBy: [4],
@@ -102,7 +104,7 @@ export const worldMap = [
   {
     id: 6,
     code: "F-10",
-    title: "Decaying Crypt",
+    name: "Decaying Crypt",
     requirements: null,
     requirementsText: "None",
     dependedBy: [4],
@@ -117,14 +119,16 @@ export const worldMap = [
   {
     id: 7,
     code: "C-12",
-    title: "Vibrant Grotto",
+    name: "Vibrant Grotto",
     requirements: [
       {
-        achievement: "The Power of Enhancement",
+        name: "The Power of Enhancement",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "The Merchant Flees",
+        name: "The Merchant Flees",
+        type: "achievement",
         complete: true
       }
     ],
@@ -142,14 +146,16 @@ export const worldMap = [
   {
     id: 8,
     code: "C-18",
-    title: "Gloomhaven Warehouse",
+    name: "Gloomhaven Warehouse",
     requirements: [
       {
-        achievement: "Jekserah’s Plans",
+        name: "Jekserah’s Plans",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "The Dead Invade",
+        name: "The Dead Invade",
+        type: "achievement",
         complete: false
       }
     ],
@@ -167,10 +173,11 @@ export const worldMap = [
   {
     id: 9,
     code: "L-2",
-    title: "Diamond Mine",
+    name: "Diamond Mine",
     requirements: [
       {
-        achievement: "The Merchant Flees",
+        name: "The Merchant Flees",
+        type: "achievement",
         complete: false
       }
     ],
@@ -187,10 +194,11 @@ export const worldMap = [
   {
     id: 10,
     code: "C-7",
-    title: "plane of elemental power",
+    name: "plane of elemental power",
     requirements: [
       {
-        achievement: "The Rift Neutralized",
+        name: "The Rift Neutralized",
+        type: "achievement",
         complete: false
       }
     ],
@@ -207,10 +215,11 @@ export const worldMap = [
   {
     id: 11,
     code: "B-16",
-    title: "Gloomhaven Square A",
+    name: "Gloomhaven Square A",
     requirements: [
       {
-        achievement: "End of the Invasion",
+        name: "End of the Invasion",
+        type: "achievement",
         complete: false
       }
     ],
@@ -227,10 +236,11 @@ export const worldMap = [
   {
     id: 12,
     code: "B-16",
-    title: "Gloomhaven Square B",
+    name: "Gloomhaven Square B",
     requirements: [
       {
-        achievement: "End of the Invasion",
+        name: "End of the Invasion",
+        type: "achievement",
         complete: false
       }
     ],
@@ -247,7 +257,7 @@ export const worldMap = [
   {
     id: 13,
     code: "N-3",
-    title: "Temple of the Seer",
+    name: "Temple of the Seer",
     requirements: null,
     requirementsText: "None",
     dependedBy: null,
@@ -262,7 +272,7 @@ export const worldMap = [
   {
     id: 14,
     code: "C-10",
-    title: "Frozen Hollow",
+    name: "Frozen Hollow",
     requirements: null,
     requirementsText: "None",
     dependedBy: [5, 8, 18],
@@ -277,7 +287,7 @@ export const worldMap = [
   {
     id: 15,
     code: "B-11",
-    title: "Shrine of Strength",
+    name: "Shrine of Strength",
     requirements: null,
     requirementsText: "None",
     dependedBy: [13, 39],
@@ -292,7 +302,7 @@ export const worldMap = [
   {
     id: 16,
     code: "B-6",
-    title: "Mountain Pass",
+    name: "Mountain Pass",
     requirements: null,
     requirementsText: "None",
     dependedBy: [11, 12, 20],
@@ -307,7 +317,7 @@ export const worldMap = [
   {
     id: 17,
     code: "K-17",
-    title: "Lost Island",
+    name: "Lost Island",
     requirements: null,
     requirementsText: "None",
     dependedBy: [13],
@@ -322,7 +332,7 @@ export const worldMap = [
   {
     id: 18,
     code: "C-14",
-    title: "Abandoned Sewers",
+    name: "Abandoned Sewers",
     requirements: null,
     requirementsText: "None",
     dependedBy: [11, 12, 20],
@@ -337,10 +347,11 @@ export const worldMap = [
   {
     id: 19,
     code: "M-7",
-    title: "Forgotten Crypt",
+    name: "Forgotten Crypt",
     requirements: [
       {
-        achievement: "The Power of Enhancement",
+        name: "The Power of Enhancement",
+        type: "achievement",
         complete: true
       }
     ],
@@ -357,10 +368,11 @@ export const worldMap = [
   {
     id: 20,
     code: "H-13",
-    title: "Necromancer's Sanctum",
+    name: "Necromancer's Sanctum",
     requirements: [
       {
-        achievement: "The Merchant Flees",
+        name: "The Merchant Flees",
+        type: "achievement",
         complete: true
       }
     ],
@@ -377,10 +389,11 @@ export const worldMap = [
   {
     id: 21,
     code: "C-7",
-    title: "Infernal Throne",
+    name: "Infernal Throne",
     requirements: [
       {
-        achievement: "The Rift Neutralized",
+        name: "The Rift Neutralized",
+        type: "achievement",
         complete: false
       }
     ],
@@ -392,10 +405,12 @@ export const worldMap = [
       "The Rift Neutralized",
       {
         condition: {
-          achievement: "Artifact: Lost",
+          name: "Artifact: Lost",
+          type: "achievement",
           complete: true
         },
-        achievement: "Artifact: Recovered"
+        name: "Artifact: Recovered",
+        type: "achievement"
       }
     ],
     excludeAchievement: null,
@@ -406,10 +421,11 @@ export const worldMap = [
   {
     id: 22,
     code: "K-8",
-    title: "Temple of the Elements",
+    name: "Temple of the Elements",
     requirements: [
       {
-        achievement: ["A Demon’s Errand", "Following Clues"],
+        name: ["A Demon’s Errand", "Following Clues"],
+        type: "achievement",
         complete: true
       }
     ],
@@ -427,7 +443,7 @@ export const worldMap = [
   {
     id: 23,
     code: "C-15",
-    title: "Deep Ruins",
+    name: "Deep Ruins",
     requirements: null,
     requirementsText: "None",
     dependedBy: [18],
@@ -442,7 +458,7 @@ export const worldMap = [
   {
     id: 24,
     code: "C-6",
-    title: "Echo Chamber",
+    name: "Echo Chamber",
     requirements: null,
     requirementsText: "None",
     dependedBy: [16],
@@ -457,7 +473,7 @@ export const worldMap = [
   {
     id: 25,
     code: "A-5",
-    title: "Icecrag Ascent",
+    name: "Icecrag Ascent",
     requirements: null,
     requirementsText: "None",
     dependedBy: [16],
@@ -472,10 +488,11 @@ export const worldMap = [
   {
     id: 26,
     code: "D-15",
-    title: "Ancient Cistern",
+    name: "Ancient Cistern",
     requirements: [
       {
-        achievement: ["Water-Breathing", "Through the Ruins"],
+        name: ["Water-Breathing", "Through the Ruins"],
+        type: "achievement",
         complete: true
       }
     ],
@@ -493,14 +510,16 @@ export const worldMap = [
   {
     id: 27,
     code: "E-6",
-    title: "Ruinous Rift",
+    name: "Ruinous Rift",
     requirements: [
       {
-        achievement: "Artifact: Lost",
+        name: "Artifact: Lost",
+        type: "achievement",
         complete: false
       },
       {
-        achievement: "Stonebreaker’s Censer",
+        name: "Stonebreaker’s Censer",
+        type: "achievement",
         complete: true
       }
     ],
@@ -518,10 +537,11 @@ export const worldMap = [
   {
     id: 28,
     code: "E-4",
-    title: "Outer Ritual Chamber",
+    name: "Outer Ritual Chamber",
     requirements: [
       {
-        achievement: "Dark Bounty",
+        name: "Dark Bounty",
+        type: "achievement",
         complete: true
       }
     ],
@@ -538,10 +558,11 @@ export const worldMap = [
   {
     id: 29,
     code: "E-3",
-    title: "Sanctuary of Gloom",
+    name: "Sanctuary of Gloom",
     requirements: [
       {
-        achievement: "An Invitation",
+        name: "An Invitation",
+        type: "achievement",
         complete: true
       }
     ],
@@ -558,10 +579,11 @@ export const worldMap = [
   {
     id: 30,
     code: "N-15",
-    title: "Shrine of the Depths",
+    name: "Shrine of the Depths",
     requirements: [
       {
-        achievement: "The Voice’s Command",
+        name: "The Voice’s Command",
+        type: "achievement",
         complete: true
       }
     ],
@@ -578,14 +600,16 @@ export const worldMap = [
   {
     id: 31,
     code: "A-16",
-    title: "Plane of Night",
+    name: "Plane of Night",
     requirements: [
       {
-        achievement: "The Power of Enhancement",
+        name: "The Power of Enhancement",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "Artifact: Recovered",
+        name: "Artifact: Recovered",
+        type: "achievement",
         complete: true
       }
     ],
@@ -603,10 +627,11 @@ export const worldMap = [
   {
     id: 32,
     code: "L-11",
-    title: "Decrepit Wood",
+    name: "Decrepit Wood",
     requirements: [
       {
-        achievement: "The Voice’s Command",
+        name: "The Voice’s Command",
+        type: "achievement",
         complete: true
       }
     ],
@@ -623,10 +648,11 @@ export const worldMap = [
   {
     id: 33,
     code: "A-7",
-    title: "Savvas Armory",
+    name: "Savvas Armory",
     requirements: [
       {
-        achievement: ["The Voice’s Command", "The Drake’s Command"],
+        name: ["The Voice’s Command", "The Drake’s Command"],
+        type: "achievement",
         complete: true
       }
     ],
@@ -644,14 +670,16 @@ export const worldMap = [
   {
     id: 34,
     code: "A-4",
-    title: "Scorched Summit",
+    name: "Scorched Summit",
     requirements: [
       {
-        achievement: "The Drake’s Command",
+        name: "The Drake’s Command",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "The Drake Aided",
+        name: "The Drake Aided",
+        type: "achievement",
         complete: true
       }
     ],
@@ -669,14 +697,16 @@ export const worldMap = [
   {
     id: 35,
     code: "A-14",
-    title: "Gloomhaven Battlements A",
+    name: "Gloomhaven Battlements A",
     requirements: [
       {
-        achievement: "A Demon’s Errand",
+        name: "A Demon’s Errand",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "The Rift Neutralized",
+        name: "The Rift Neutralized",
+        type: "achievement",
         complete: false
       }
     ],
@@ -694,14 +724,16 @@ export const worldMap = [
   {
     id: 36,
     code: "B-14",
-    title: "Gloomhaven Battlements B",
+    name: "Gloomhaven Battlements B",
     requirements: [
       {
-        achievement: "A Demon’s Errand",
+        name: "A Demon’s Errand",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "The Rift Neutralized",
+        name: "The Rift Neutralized",
+        type: "achievement",
         complete: false
       }
     ],
@@ -719,10 +751,11 @@ export const worldMap = [
   {
     id: 37,
     code: "G-18",
-    title: "Doom Trench",
+    name: "Doom Trench",
     requirements: [
       {
-        achievement: "Water-Breathing",
+        name: "Water-Breathing",
+        type: "achievement",
         complete: true
       }
     ],
@@ -739,7 +772,7 @@ export const worldMap = [
   {
     id: 38,
     code: "G-2",
-    title: "Slave Pens",
+    name: "Slave Pens",
     requirements: null,
     requirementsText: "None",
     dependedBy: [31],
@@ -754,7 +787,7 @@ export const worldMap = [
   {
     id: 39,
     code: "B-11",
-    title: "Treacherous Divide",
+    name: "Treacherous Divide",
     requirements: null,
     requirementsText: "None",
     dependedBy: [31],
@@ -769,14 +802,16 @@ export const worldMap = [
   {
     id: 40,
     code: "F-12",
-    title: "Ancient Defense Network",
+    name: "Ancient Defense Network",
     requirements: [
       {
-        achievement: "The Voice’s Command",
+        name: "The Voice’s Command",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "The Voice’s Treasure",
+        name: "The Voice’s Treasure",
+        type: "achievement",
         complete: true
       }
     ],
@@ -794,10 +829,11 @@ export const worldMap = [
   {
     id: 41,
     code: "F-13",
-    title: "Timeworn Tomb",
+    name: "Timeworn Tomb",
     requirements: [
       {
-        achievement: "The Voice’s Command",
+        name: "The Voice’s Command",
+        type: "achievement",
         complete: true
       }
     ],
@@ -814,14 +850,16 @@ export const worldMap = [
   {
     id: 42,
     code: "C-5",
-    title: "The Scepter and the Voice",
+    name: "The Scepter and the Voice",
     requirements: [
       {
-        achievement: "The Scepter and the Voice",
+        name: "The Scepter and the Voice",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "The Voice Freed",
+        name: "The Voice Freed",
+        type: "achievement",
         complete: false
       }
     ],
@@ -839,10 +877,11 @@ export const worldMap = [
   {
     id: 43,
     code: "D-4",
-    title: "Drake Nest",
+    name: "Drake Nest",
     requirements: [
       {
-        achievement: "The Power of Enhancement",
+        name: "The Power of Enhancement",
+        type: "achievement",
         complete: true
       }
     ],
@@ -859,10 +898,11 @@ export const worldMap = [
   {
     id: 44,
     code: "F-3",
-    title: "Tribal Assault",
+    name: "Tribal Assault",
     requirements: [
       {
-        achievement: "Redthorn’s Aid",
+        name: "Redthorn’s Aid",
+        type: "achievement",
         complete: true
       }
     ],
@@ -879,10 +919,11 @@ export const worldMap = [
   {
     id: 45,
     code: "M-9",
-    title: "Rebel Swamp",
+    name: "Rebel Swamp",
     requirements: [
       {
-        achievement: "City Rule: Demonic",
+        name: "City Rule: Demonic",
+        type: "achievement",
         complete: true
       }
     ],
@@ -899,10 +940,11 @@ export const worldMap = [
   {
     id: 46,
     code: "A-11",
-    title: "Nightmare Peak",
+    name: "Nightmare Peak",
     requirements: [
       {
-        achievement: "Across the Divide",
+        name: "Across the Divide",
+        type: "achievement",
         complete: true
       }
     ],
@@ -919,10 +961,11 @@ export const worldMap = [
   {
     id: 47,
     code: "H-18",
-    title: "Lair of the Unseeing Eye",
+    name: "Lair of the Unseeing Eye",
     requirements: [
       {
-        achievement: "Through the Trench",
+        name: "Through the Trench",
+        type: "achievement",
         complete: true
       }
     ],
@@ -939,10 +982,11 @@ export const worldMap = [
   {
     id: 48,
     code: "E-1",
-    title: "Shadow Weald",
+    name: "Shadow Weald",
     requirements: [
       {
-        achievement: "Redthorn’s Aid",
+        name: "Redthorn’s Aid",
+        type: "achievement",
         complete: true
       }
     ],
@@ -959,10 +1003,11 @@ export const worldMap = [
   {
     id: 49,
     code: "N-7",
-    title: "Rebel’s Stand",
+    name: "Rebel’s Stand",
     requirements: [
       {
-        achievement: "City Rule: Demonic",
+        name: "City Rule: Demonic",
+        type: "achievement",
         complete: true
       }
     ],
@@ -979,14 +1024,16 @@ export const worldMap = [
   {
     id: 50,
     code: "C-17",
-    title: "Ghost Fortress",
+    name: "Ghost Fortress",
     requirements: [
       {
-        achievement: "City Rule: Demonic",
+        name: "City Rule: Demonic",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "Annihilation of Order",
+        name: "Annihilation of Order",
+        type: "achievement",
         complete: false
       }
     ],
@@ -1004,18 +1051,21 @@ export const worldMap = [
   {
     id: 51,
     code: "A-15",
-    title: "The Void",
+    name: "The Void",
     requirements: [
       {
-        achievement: "End of Corruption1",
+        name: "End of Corruption1",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "End of Corruption2",
+        name: "End of Corruption2",
+        type: "achievement",
         complete: true
       },
       {
-        achievement: "End of Corruption3",
+        name: "End of Corruption3",
+        type: "achievement",
         complete: true
       }
     ],
@@ -1032,51 +1082,53 @@ export const worldMap = [
   {
     id: 52,
     code: "D-14",
-    title: "Noxious Cellar",
-    requirements: [
-      {
-        achievement: "Seeker of Xorn",
-        complete: false
-      }
-    ],
+    name: "Noxious Cellar",
+    requirements: false,
     requirementsText: "“Seeker of Xorn” personal quest",
     dependedBy: null,
     links: [0],
     produce: [53],
     partyAchievement: null,
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/52.png"
   },
   {
     id: 53,
     code: "F-11",
-    title: "Crypt Basement",
+    name: "Crypt Basement",
     requirements: [
       {
-        achievement: "Seeker of Xorn",
-        complete: false
+        name: "Noxious Cellar",
+        type: "scenario",
+        complete: true
       }
     ],
     requirementsText: "“Seeker of Xorn” personal quest",
     dependedBy: [52],
     links: null,
     produce: [54],
-    partyAchievement: null,
+    partyAchievement: "Staff of Xorn",
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/53.png"
   },
   {
     id: 54,
     code: "D-8",
-    title: "Palace of Ice",
+    name: "Palace of Ice",
     requirements: [
       {
-        achievement: "Seeker of Xorn",
-        complete: false
+        name: "Crypt Basement",
+        type: "scenario",
+        complete: true
+      },
+      {
+        name: "Staff of Xorn",
+        type: "personalQuest",
+        complete: true
       }
     ],
     requirementsText:
@@ -1084,126 +1136,106 @@ export const worldMap = [
     dependedBy: [53],
     links: null,
     produce: null,
-    partyAchievement: null,
+    partyAchievement: "Envelope Seeker of Xorn",
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/54.png"
   },
   {
     id: 55,
     code: "G-5",
-    title: "Foggy Thicket",
-    requirements: [
-      {
-        achievement: "Take Back the Trees",
-        complete: false
-      }
-    ],
+    name: "Foggy Thicket",
+    requirements: null,
     requirementsText: "“Take Back the Trees” personal quest",
     dependedBy: null,
     links: [56],
     produce: [56],
     partyAchievement: null,
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/55.png"
   },
   {
     id: 56,
     code: "G-4",
-    title: "Bandit’s Wood",
-    requirements: [
-      {
-        achievement: "Take Back the Trees",
-        complete: false
-      }
-    ],
+    name: "Bandit’s Wood",
+    requirements: null,
     requirementsText: "“Take Back the Trees” personal quest",
     dependedBy: [55],
     links: [55],
     produce: null,
-    partyAchievement: null,
+    partyAchievement: "Envelope Take Back the Trees",
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/56.png"
   },
   {
     id: 57,
     code: "D-14",
-    title: "Investigation",
-    requirements: [
-      {
-        achievement: "Vengeance",
-        complete: false
-      }
-    ],
+    name: "Investigation",
+    requirements: null,
     requirementsText: "“Vengeance” personal quest",
-    dependedBy: [200],
+    dependedBy: null,
     links: [0],
     produce: [58],
     partyAchievement: null,
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/57.png"
   },
   {
     id: 58,
     code: "E-15",
-    title: "Bloody Shack",
-    requirements: [
-      {
-        achievement: "Vengeance",
-        complete: false
-      }
-    ],
+    name: "Bloody Shack",
+    requirements: null,
     requirementsText: "“Vengeance” personal quest",
     dependedBy: [57],
     links: [0],
     produce: null,
-    partyAchievement: "Vengeance",
+    partyAchievement: "Envelope X",
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/58.png"
   },
   {
     id: 59,
-    code: "aaa-1",
-    title: "forgotten grove",
+    code: "F-1",
+    name: "Forgotten Grove",
     requirements: null,
-    requirementsText: "None",
-    dependedBy: [200],
+    requirementsText: "“Finding the Cure” personal quest",
+    dependedBy: null,
     links: null,
-    produce: [100],
-    partyAchievement: "500",
+    produce: [60],
+    partyAchievement: null,
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/59.png"
   },
   {
     id: 60,
-    code: "aaa-1",
-    title: "alchemy lab",
+    code: "B-15",
+    name: "Alchemy Lab",
     requirements: null,
-    requirementsText: "None",
-    dependedBy: [200],
-    links: null,
+    requirementsText: "“Finding the Cure” personal quest",
+    dependedBy: [59],
+    links: [0],
     produce: [100],
     partyAchievement: "500",
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/60.png"
   },
   {
     id: 61,
     code: "aaa-1",
-    title: "fading lighthouse",
+    name: "fading lighthouse",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1211,14 +1243,14 @@ export const worldMap = [
     produce: [100],
     partyAchievement: "500",
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/61.png"
   },
   {
     id: 62,
     code: "aaa-1",
-    title: "pit of souls",
+    name: "pit of souls",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1226,14 +1258,14 @@ export const worldMap = [
     produce: [100],
     partyAchievement: "500",
     excludeAchievement: null,
-    type: "personal",
+    type: "personalQuest",
     mapPosition: ["300%", "400%"],
     image: "world-map/62.png"
   },
   {
     id: 63,
     code: "aaa-1",
-    title: "magma pit",
+    name: "magma pit",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1248,7 +1280,7 @@ export const worldMap = [
   {
     id: 64,
     code: "aaa-1",
-    title: "underwater lagoon",
+    name: "underwater lagoon",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1263,7 +1295,7 @@ export const worldMap = [
   {
     id: 65,
     code: "aaa-1",
-    title: "sulfur mine",
+    name: "sulfur mine",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1278,7 +1310,7 @@ export const worldMap = [
   {
     id: 66,
     code: "aaa-1",
-    title: "clockwork cove",
+    name: "clockwork cove",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1293,7 +1325,7 @@ export const worldMap = [
   {
     id: 67,
     code: "aaa-1",
-    title: "arcane library",
+    name: "arcane library",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1308,7 +1340,7 @@ export const worldMap = [
   {
     id: 68,
     code: "aaa-1",
-    title: "toxic moor",
+    name: "toxic moor",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1323,7 +1355,7 @@ export const worldMap = [
   {
     id: 69,
     code: "aaa-1",
-    title: "well of the unfortunate",
+    name: "well of the unfortunate",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1338,7 +1370,7 @@ export const worldMap = [
   {
     id: 70,
     code: "aaa-1",
-    title: "chained isle",
+    name: "chained isle",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1353,7 +1385,7 @@ export const worldMap = [
   {
     id: 71,
     code: "aaa-1",
-    title: "windswept highlands",
+    name: "windswept highlands",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1368,7 +1400,7 @@ export const worldMap = [
   {
     id: 72,
     code: "aaa-1",
-    title: "oozing grove",
+    name: "oozing grove",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1383,7 +1415,7 @@ export const worldMap = [
   {
     id: 73,
     code: "aaa-1",
-    title: "rockslide ridge",
+    name: "rockslide ridge",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1398,7 +1430,7 @@ export const worldMap = [
   {
     id: 74,
     code: "aaa-1",
-    title: "merchant ship",
+    name: "merchant ship",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1413,7 +1445,7 @@ export const worldMap = [
   {
     id: 75,
     code: "aaa-1",
-    title: "overgrown graveyard",
+    name: "overgrown graveyard",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1428,7 +1460,7 @@ export const worldMap = [
   {
     id: 76,
     code: "aaa-1",
-    title: "harrower hive",
+    name: "harrower hive",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1443,7 +1475,7 @@ export const worldMap = [
   {
     id: 77,
     code: "aaa-1",
-    title: "vault of secrets",
+    name: "vault of secrets",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1458,7 +1490,7 @@ export const worldMap = [
   {
     id: 78,
     code: "aaa-1",
-    title: "sacrifice pit",
+    name: "sacrifice pit",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1473,7 +1505,7 @@ export const worldMap = [
   {
     id: 79,
     code: "aaa-1",
-    title: "lost temple",
+    name: "lost temple",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1488,7 +1520,7 @@ export const worldMap = [
   {
     id: 80,
     code: "aaa-1",
-    title: "vigil keep",
+    name: "vigil keep",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1503,7 +1535,7 @@ export const worldMap = [
   {
     id: 81,
     code: "aaa-1",
-    title: "temple of the eclipse",
+    name: "temple of the eclipse",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1518,7 +1550,7 @@ export const worldMap = [
   {
     id: 82,
     code: "aaa-1",
-    title: "burning mountain",
+    name: "burning mountain",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1533,7 +1565,7 @@ export const worldMap = [
   {
     id: 83,
     code: "aaa-1",
-    title: "shadows within",
+    name: "shadows within",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1548,7 +1580,7 @@ export const worldMap = [
   {
     id: 84,
     code: "aaa-1",
-    title: "crystalline cave",
+    name: "crystalline cave",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1563,7 +1595,7 @@ export const worldMap = [
   {
     id: 85,
     code: "aaa-1",
-    title: "sun temple",
+    name: "sun temple",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1578,7 +1610,7 @@ export const worldMap = [
   {
     id: 86,
     code: "aaa-1",
-    title: "harried village",
+    name: "harried village",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1593,7 +1625,7 @@ export const worldMap = [
   {
     id: 87,
     code: "aaa-1",
-    title: "corrupted cove",
+    name: "corrupted cove",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1608,7 +1640,7 @@ export const worldMap = [
   {
     id: 88,
     code: "aaa-1",
-    title: "plane of water",
+    name: "plane of water",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1623,7 +1655,7 @@ export const worldMap = [
   {
     id: 89,
     code: "aaa-1",
-    title: "syndicate hideout",
+    name: "syndicate hideout",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1638,7 +1670,7 @@ export const worldMap = [
   {
     id: 90,
     code: "aaa-1",
-    title: "demonic rift",
+    name: "demonic rift",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1653,7 +1685,7 @@ export const worldMap = [
   {
     id: 91,
     code: "aaa-1",
-    title: "wild melee",
+    name: "wild melee",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1668,7 +1700,7 @@ export const worldMap = [
   {
     id: 92,
     code: "aaa-1",
-    title: "back alley brawl",
+    name: "back alley brawl",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1683,7 +1715,7 @@ export const worldMap = [
   {
     id: 93,
     code: "aaa-1",
-    title: "sunken vessel",
+    name: "sunken vessel",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1698,7 +1730,7 @@ export const worldMap = [
   {
     id: 94,
     code: "aaa-1",
-    title: "vermling nest",
+    name: "vermling nest",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
@@ -1713,7 +1745,7 @@ export const worldMap = [
   {
     id: 95,
     code: "aaa-1",
-    title: "payment due",
+    name: "payment due",
     requirements: null,
     requirementsText: "None",
     dependedBy: [200],
