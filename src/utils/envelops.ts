@@ -1,4 +1,4 @@
-export const personalQuests = [
+export const envelops = [
   {
     id: 0,
     name: "Seeker of Xorn",
@@ -6,17 +6,12 @@ export const personalQuests = [
   },
   {
     id: 1,
-    name: "`Staff of Xorn`",
-    complete: false
-  },
-  {
-    id: 2,
     name: "Take Back the Trees",
     complete: false
   },
   {
-    id: 3,
-    name: "Vengeance",
+    id: 2,
+    name: "X",
     complete: false
   }
 ];

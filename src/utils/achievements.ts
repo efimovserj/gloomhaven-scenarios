@@ -244,5 +244,17 @@ export const achievements = [
     name: "End of Corruption3",
     type: "global",
     complete: false
+  },
+  {
+    id: 40,
+    name: "High Sea Escort",
+    type: "party",
+    complete: false
+  },
+  {
+    id: 41,
+    name: "Grave Job",
+    type: "party",
+    complete: false
   }
 ];
