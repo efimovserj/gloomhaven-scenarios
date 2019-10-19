@@ -256,5 +256,29 @@ export const achievements = [
     name: "Grave Job",
     type: "party",
     complete: false
+  },
+  {
+    id: 42,
+    name: "Bad Business",
+    type: "party",
+    complete: false
+  },
+  {
+    id: 43,
+    name: "Tremors",
+    type: "party",
+    complete: false
+  },
+  {
+    id: 44,
+    name: "Water Staff",
+    type: "party",
+    complete: false
+  },
+  {
+    id: 45,
+    name: "Sin-Ra",
+    type: "party",
+    complete: false
   }
 ];
