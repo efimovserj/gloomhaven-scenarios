@@ -1,4 +1,4 @@
-export const worldMap = [
+export const scenarios = [
   {
     id: 0,
     code: null,
@@ -260,7 +260,7 @@ export const worldMap = [
     name: "Temple of the Seer",
     requirements: null,
     requirementsText: "None",
-    dependedBy: null,
+    dependedBy: [8],
     links: null,
     produce: [15, 17, 20],
     partyAchievement: null,
@@ -1093,7 +1093,7 @@ export const worldMap = [
     produce: [53],
     partyAchievement: null,
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/52.png"
   },
@@ -1114,7 +1114,7 @@ export const worldMap = [
     produce: [54],
     partyAchievement: { type: "achievement", name: "Staff of Xorn" },
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/53.png"
   },
@@ -1130,7 +1130,7 @@ export const worldMap = [
       },
       {
         name: "Staff of Xorn",
-        type: "personalQuest",
+        type: "personal",
         complete: true
       }
     ],
@@ -1141,7 +1141,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: { type: "envelope", name: "Seeker of Xorn" },
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/54.png"
   },
@@ -1156,7 +1156,7 @@ export const worldMap = [
     produce: [56],
     partyAchievement: null,
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/55.png"
   },
@@ -1180,7 +1180,7 @@ export const worldMap = [
       name: "Take Back the Trees"
     },
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/56.png"
   },
@@ -1195,7 +1195,7 @@ export const worldMap = [
     produce: [58],
     partyAchievement: null,
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/57.png"
   },
@@ -1216,7 +1216,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: { type: "envelope", name: "X" },
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/58.png"
   },
@@ -1231,7 +1231,7 @@ export const worldMap = [
     produce: [60],
     partyAchievement: null,
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/59.png"
   },
@@ -1252,7 +1252,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: { type: "envelope", name: "X" },
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/60.png"
   },
@@ -1267,7 +1267,7 @@ export const worldMap = [
     produce: [62],
     partyAchievement: null,
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/61.png"
   },
@@ -1285,7 +1285,7 @@ export const worldMap = [
       name: "Envelop “The Fall of Man”"
     },
     excludeAchievement: null,
-    type: "personalQuest",
+    type: "personal",
     mapPosition: ["300%", "400%"],
     image: "world-map/62.png"
   },
@@ -1300,7 +1300,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "random",
     mapPosition: ["300%", "400%"],
     image: "world-map/63.png"
   },
@@ -1321,7 +1321,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "random",
     mapPosition: ["300%", "400%"],
     image: "world-map/64.png"
   },
@@ -1336,7 +1336,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: { type: "achievement", name: "Ancient Technology" },
     excludeAchievement: null,
-    type: "main",
+    type: "random",
     mapPosition: ["300%", "400%"],
     image: "world-map/65.png"
   },
@@ -1351,7 +1351,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: { type: "achievement", name: "Ancient Technology" },
     excludeAchievement: null,
-    type: "main",
+    type: "random",
     mapPosition: ["300%", "400%"],
     image: "world-map/66.png"
   },
@@ -1366,7 +1366,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: { type: "achievement", name: "Ancient Technology" },
     excludeAchievement: null,
-    type: "main",
+    type: "random",
     mapPosition: ["300%", "400%"],
     image: "world-map/67.png"
   },
@@ -1381,7 +1381,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "random",
     mapPosition: ["300%", "400%"],
     image: "world-map/68.png"
   },
@@ -1396,7 +1396,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "random",
     mapPosition: ["300%", "400%"],
     image: "world-map/69.png"
   },
@@ -1411,7 +1411,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "random",
     mapPosition: ["300%", "400%"],
     image: "world-map/70.png"
   },
@@ -1426,7 +1426,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "random",
     mapPosition: ["300%", "400%"],
     image: "world-map/71.png"
   },
@@ -1441,7 +1441,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "sealed",
     mapPosition: ["300%", "400%"],
     image: "world-map/72.png"
   },
@@ -1456,7 +1456,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "sealed",
     mapPosition: ["300%", "400%"],
     image: "world-map/73.png"
   },
@@ -1477,7 +1477,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/74.png"
   },
@@ -1498,7 +1498,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/75.png"
   },
@@ -1513,7 +1513,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "sealed",
     mapPosition: ["300%", "400%"],
     image: "world-map/76.png"
   },
@@ -1528,7 +1528,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "sealed",
     mapPosition: ["300%", "400%"],
     image: "world-map/77.png"
   },
@@ -1543,7 +1543,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/78.png"
   },
@@ -1558,7 +1558,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/79.png"
   },
@@ -1573,7 +1573,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "road",
     mapPosition: ["300%", "400%"],
     image: "world-map/80.png"
   },
@@ -1588,7 +1588,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/81.png"
   },
@@ -1603,7 +1603,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "road",
     mapPosition: ["300%", "400%"],
     image: "world-map/82.png"
   },
@@ -1620,7 +1620,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/83.png"
   },
@@ -1635,7 +1635,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/84.png"
   },
@@ -1650,7 +1650,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "road",
     mapPosition: ["300%", "400%"],
     image: "world-map/85.png"
   },
@@ -1665,7 +1665,7 @@ export const worldMap = [
     produce: [87],
     partyAchievement: { type: "achievement", name: "The Poison’s Source" },
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/86.png"
   },
@@ -1686,7 +1686,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/87.png"
   },
@@ -1713,7 +1713,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/88.png"
   },
@@ -1728,7 +1728,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/89.png"
   },
@@ -1743,7 +1743,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "road",
     mapPosition: ["300%", "400%"],
     image: "world-map/90.png"
   },
@@ -1758,7 +1758,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/91.png"
   },
@@ -1779,7 +1779,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/92.png"
   },
@@ -1794,7 +1794,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/93.png"
   },
@@ -1809,7 +1809,7 @@ export const worldMap = [
     produce: [95],
     partyAchievement: { type: "achievement", name: "Through the Nest" },
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/94.png"
   },
@@ -1830,7 +1830,7 @@ export const worldMap = [
     produce: null,
     partyAchievement: null,
     excludeAchievement: null,
-    type: "main",
+    type: "city",
     mapPosition: ["300%", "400%"],
     image: "world-map/95.png"
   }

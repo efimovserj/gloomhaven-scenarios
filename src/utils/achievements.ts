@@ -228,12 +228,6 @@ export const achievements = [
     complete: false
   },
   {
-    id: 37,
-    name: "The Drake Aided",
-    type: "global",
-    complete: false
-  },
-  {
     id: 38,
     name: "End of Corruption2",
     type: "global",
@@ -280,5 +274,13 @@ export const achievements = [
     name: "Sin-Ra",
     type: "party",
     complete: false
+  },
+  {
+    id: 46,
+    name: "The Drake Aided",
+    type: "global",
+    complete: false
   }
 ];
+
+export default achievements;
